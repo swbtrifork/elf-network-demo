@@ -1,0 +1,30 @@
+{
+  "name": "elf-network-demo",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.7",
+    "@ngneat/effects-hooks": "^1.0.0",
+    "@ngneat/elf": "^1.0.2",
+    "@ngneat/elf-cli-ng": "^1.0.0",
+    "@ngneat/elf-devtools": "^1.2.0",
+    "@ngneat/elf-entities": "^2.0.2",
+    "@ngneat/elf-pagination": "^1.0.0",
+    "@ngneat/elf-persist-state": "^1.0.0",
+    "@ngneat/elf-requests": "^1.1.1",
+    "@ngneat/elf-state-history": "^1.0.1",
+    "@ngneat/react-rxjs": "^1.0.0",
+    "preact": "^10.5.15",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.1.5",
+    "@types/styled-components": "^5.1.19",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2"
+  }
+}
