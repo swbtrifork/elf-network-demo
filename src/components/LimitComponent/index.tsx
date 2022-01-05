@@ -1,5 +1,5 @@
 import { useEffect, useState } from "preact/hooks";
-import { fetchTodos } from "../../services/pokemon.service";
+import { fetchTodos } from "../../services/todos.service";
 
 const LimitComponent = () => {
   const [limit, setLimit] = useState("10");

@@ -1,6 +1,6 @@
 import { useObservable } from "@ngneat/react-rxjs";
 import styled from "styled-components";
-import { todosDataSource } from "../../repositories/pokemon.repository";
+import { todosDataSource } from "../../repositories/todos.repository";
 import LimitComponent from "../LimitComponent";
 
 interface Props {

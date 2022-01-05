@@ -27,10 +27,6 @@ export const todosDataSource = createRequestDataSource({
   idleAsPending: true,
 });
 
-export const setTodos = (todos: Todo[]) => {
-  store.update(
-    updateRequestCache("todos"),
-    setEntities(todos),
-    todosDataSource.setSuccess()
-  );
+export const setTodos = (todos: Todo[], limit: number) => {
+  store.update(updateRequestCache(`todos=${limit}`), setEntities(todos));
 };

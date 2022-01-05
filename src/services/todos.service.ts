@@ -4,8 +4,7 @@ import { Todo } from "../interfaces";
 import {
   setTodos,
   skipWhileTodosCached,
-  todosDataSource,
-} from "../repositories/pokemon.repository";
+} from "../repositories/todos.repository";
 
 export const fetchTodos = (limit = 10) => {
   return fromFetch<Todo[]>(
@@ -14,8 +13,7 @@ export const fetchTodos = (limit = 10) => {
       selector: (response) => response.json(),
     }
   ).pipe(
-    tap(setTodos),
-    skipWhileTodosCached("todos"),
-    todosDataSource.trackRequestStatus()
+    tap((todos) => setTodos(todos, limit)),
+    skipWhileTodosCached(`todos=${limit}`)
   );
 };
